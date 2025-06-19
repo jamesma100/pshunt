@@ -74,7 +74,7 @@ func initKeybindings(g *gocui.Gui, vi *view_info) error {
 		'G':                vi.gotoLast,
 		'r':                vi.refreshPsList,
 		'/':                vi.enterEditMode,
-		gocui.KeyEnter:     vi.killPs,
+		'9':                vi.killPs,
 		gocui.KeyEsc:       vi.refreshPsList,
 	}
 
