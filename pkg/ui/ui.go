@@ -185,6 +185,13 @@ func (vi *view_info) simpleEditor(v *gocui.View, key gocui.Key, ch rune, mod goc
 		if x > 1 {
 			v.EditDelete(true)
 		}
+	case key == gocui.KeyArrowLeft:
+		x, _ := v.Cursor()
+		if x > 1 {
+			v.MoveCursor(-1, 0, false)
+		}
+	case key == gocui.KeyArrowRight:
+		v.MoveCursor(1, 0, false)
 	case key == gocui.KeyEsc:
 		vi.gui.SetCurrentView("main")
 		vi.refreshPsList(vi.gui, v)
