@@ -224,5 +224,5 @@ func (vi *view_info) refreshConsole() {
 func (vi *view_info) displayHelp() {
 	v, _ := vi.gui.View("help")
 	v.Clear()
-	fmt.Fprintf(v, "k/j: up/down | /: search | enter: sigkill | r: refresh | ctrl-c: quit")
+	fmt.Fprintf(v, "k/j: up/down | /: search | 9: kill | r: refresh | ctrl-c: quit")
 }
