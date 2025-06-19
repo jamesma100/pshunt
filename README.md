@@ -6,15 +6,19 @@ Minimalistic terminal app to hunt and kill processes.
 
 ### Usage:
 - `9`: kill process
-- `k | up`: move cursor down
+- `k | up`: move cursor up
 - `j | down`: move cursor down
+- `/`: search
+- `esc`: exit search mode
+- `r`: refetch processes
 - `ctrl-f`: next page
 - `ctrl-b`: previous page
+- `H`: top of page
+- `L`: bottom of page
 - `G`: move cursor to end
 - `g`: move cursor to start
-- `r`: refetch processes
-- `/`: search (basic substring search, does not support regex)
-- `esc`: exit search mode
+
+
 
 ### Installation
 Just clone the repo and build from source. Requires Go 1.23 compiler.
