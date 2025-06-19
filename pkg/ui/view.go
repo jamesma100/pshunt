@@ -20,7 +20,7 @@ type view_info struct {
 // generate view
 func (vi *view_info) layout(g *gocui.Gui) error {
 	maxX, maxY := g.Size()
-	if v, err := g.SetView("main", maxX/8, 3, maxX-maxX/8, maxY-7); err != nil {
+	if v, err := g.SetView("main", maxX/12, 3, maxX-maxX/12, maxY-7); err != nil {
 		if err != gocui.ErrUnknownView {
 			return err
 		}
@@ -37,13 +37,13 @@ func (vi *view_info) layout(g *gocui.Gui) error {
 			return err
 		}
 	}
-	if _, err := g.SetView("help", maxX/8, maxY-6, maxX-maxX/8, maxY-4); err != nil {
+	if _, err := g.SetView("help", maxX/12, maxY-6, maxX-maxX/12, maxY-4); err != nil {
 		if err != gocui.ErrUnknownView {
 			return err
 		}
 		vi.displayHelp()
 	}
-	if _, err := g.SetView("console", maxX/8, maxY-3, maxX-maxX/8, maxY-1); err != nil {
+	if _, err := g.SetView("console", maxX/12, maxY-3, maxX-maxX/12, maxY-1); err != nil {
 		if err != gocui.ErrUnknownView {
 			return err
 		}
