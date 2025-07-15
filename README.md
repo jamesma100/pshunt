@@ -1,5 +1,7 @@
 # pshunt
-Minimalistic terminal app to hunt and kill processes.
+Minimalistic process viewer similar to htop. Features:
+- view, search, and kill processes
+- vi keybindings
 
 ![pshunt_demo](https://github.com/user-attachments/assets/dfad35c9-4725-4510-a569-a0023005fb5f)
 
